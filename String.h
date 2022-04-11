@@ -1,12 +1,17 @@
+// здесь определены полностью конструкторы
+// функции перегрузки - только прототипы, а определения - в .срр - файле
+
 #pragma once
 #include <iostream>
+#include <iostream>
+
 using namespace std;
 
 class String // создадим класс с простым названием для работы со строками
 {
 	int len; // длина строки
 	char* str; // указатель на начало строки
-	int static count; // считчик созданных строк
+	int static count; // счетчик созданных строк
 
 public:
 	String() :len{ 0 }, str{ nullptr }{ count++;} // конструктор по умолчанию без параметров, при создании объекта увеличиваем счетчик на 1
@@ -42,7 +47,6 @@ public:
 		str = c.str;
 		c.len = 0;
 		c.str = nullptr;
-
 	}
 
 	~String() //деструктор
@@ -53,7 +57,7 @@ public:
 		}
 	}
 
-	//функции вывода и добалвления строки
+	//функции вывода и добавления строки
 	void Show();
 	String& Add(String& c);
 
@@ -61,10 +65,9 @@ public:
 	String operator+(String c);
 	String operator=(String c);
 	String& operator()(const char* c); // перегрузка оператора ()
-	friend istream& operator>>(istream& t, const String& m); // перегрузка ввода
-	friend ostream& operator<<(ostream& t, const String& c); // перегрузка вывода
-
-
+	friend ostream& operator<<(ostream& t, const String& c);
+	
+	int Get_count(); //возвращает число созданных объектов
 
 };
 

@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="String.cpp" />
     <ClCompile Include="STR_class_DZ.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
     <ClInclude Include="String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
