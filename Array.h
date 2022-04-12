@@ -52,8 +52,8 @@ public:
 	void Append(int a); // присоединение в конец элемента
 	int GetCount(); // вывод количества объектов
 	
-	friend Array operator+(Array a, Array c); // обычная перегрука внутри класса
 	Array operator=(Array c);// обычная перегрука внутри класса. Вне класса ее написать нельзя, оказывается
+	friend Array operator+(Array a, Array c); // не обычная перегрука внутри класса
 	friend Array operator+(int a, Array b); // не обычная перегрузка вне класса для правого операнда
 
 	~Array()
