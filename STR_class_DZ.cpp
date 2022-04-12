@@ -1,9 +1,11 @@
-﻿#include <iostream>
+﻿/*Итак, это домашнее задание с классами String и Array
+все операторы перегружать не стал, но основные сделал
+*/
+#include <iostream>
 #include "String.h"
 #include "Array.h"
 using namespace std;
 #include <ctime>
-
 
 int main()
 {
