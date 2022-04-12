@@ -22,7 +22,7 @@ int main()
 
     //теперь перенесем
     cout << "\n";
-    A = std::move(C);
+    A = std::move(C); // оператор переноса отрабатывает нормально
     cout << A;
     cout << C;
     // работает
@@ -30,6 +30,6 @@ int main()
     cout << "\nObjects - " << A.Get_count();
 
 
-    //
+    
 }
 

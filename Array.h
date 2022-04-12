@@ -29,6 +29,13 @@ public:
 		}
 	}
 	
+	void Show();//вывод на экран
+	void Init_random();//заполнение случайными числами
+	void Init_user();//заполнения вручную пользователем
+	Array Add(Array a); // добавление элементов в массив
+	void Append(int a); // присоединение в конец элемента
+
+
 	~Array()
 	{
 		if (m_ptr !=nullptr)
